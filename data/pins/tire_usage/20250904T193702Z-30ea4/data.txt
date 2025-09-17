@@ -1,0 +1,10 @@
+file: tire_usage.rds
+file_size: 1287
+pin_hash: 30ea4605e5677a1d
+type: rds
+title: 'tire_usage: a pinned 16 x 23 data frame'
+description: ~
+tags: ~
+urls: ~
+created: 20250904T193702Z
+api_version: 1

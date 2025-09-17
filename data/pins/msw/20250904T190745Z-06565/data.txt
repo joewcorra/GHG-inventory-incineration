@@ -1,0 +1,10 @@
+file: msw.csv
+file_size: 948
+pin_hash: 06565540a9507021
+type: csv
+title: 'msw: a pinned 33 x 4 data frame'
+description: ~
+tags: ~
+urls: ~
+created: 20250904T190745Z
+api_version: 1
