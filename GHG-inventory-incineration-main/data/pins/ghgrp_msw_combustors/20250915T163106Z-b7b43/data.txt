@@ -1,0 +1,10 @@
+file: ghgrp_msw_combustors.rds
+file_size: 27850
+pin_hash: b7b43dc46d766455
+type: rds
+title: 'ghgrp_msw_combustors: a pinned 756 x 15 data frame'
+description: ~
+tags: ~
+urls: ~
+created: 20250915T163106Z
+api_version: 1

@@ -1,0 +1,10 @@
+file: tire_usage.csv
+file_size: 1955
+pin_hash: 557d3df2e0dca401
+type: csv
+title: 'tire_usage: a pinned 17 x 22 data frame'
+description: ~
+tags: ~
+urls: ~
+created: 20250904T190701Z
+api_version: 1
