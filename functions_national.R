@@ -60,6 +60,7 @@ get_msw_other_incineration <- function(msw,
            msw_no_tires = msw_combined - tires_incinerated) %>%
     tanagerharmonize::pre_clean()
   
+  
   return(msw_other_incineration)
   
 }
@@ -114,9 +115,13 @@ get_msw_other_emissions <-function(ghgrp_emissions,
   
   msw_other_emissions <- msw_other_incineration %>%
     left_join(ghgrp_emissions, by = "year") %>%
-    mutate(co2_emissions = waste_carbon_content * msw_no_tires / 10^9)
+    mutate(co2_emissions = waste_carbon_content * msw_no_tires / 10^9,
+           n20_emissions = msw_no_tires * incineration_factors["short_tons_to_metric_tons"] * incineration_factors["n2o_emission_factor"] / 10^9, 
+           ch4_emissions = msw_no_tires * incineration_factors["short_tons_to_gg"] *  incineration_factors["ch4_emission_factor"] / 10^6)
     
   return(msw_other_emissions)
   
   
 }
+
+
