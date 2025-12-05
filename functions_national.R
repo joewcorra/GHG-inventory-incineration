@@ -58,7 +58,7 @@ get_msw_other_incineration <- function(msw,
     mutate(msw_incinerated = msw * discarded * incineration_factors["short_tons_to_metric_tons"] * incinerated, 
            msw_combined = msw_incinerated / incineration_factors["short_tons_to_metric_tons"],
            msw_no_tires = msw_combined - tires_incinerated) %>%
-    tanagerharmonize::pre_clean()
+    syrinx::pre_clean()
   
   
   return(msw_other_incineration)
