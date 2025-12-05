@@ -4,7 +4,7 @@ This project is part of the Inventory of U.S. Greenhouse Gas Emissions and Sinks
 both national and state levels. The project integrates data retrieval, transformation, and reporting, with built-in automated QA/QC (quality assurance/quality control) 
 capabilities.
 
-Features
+## Features
 
 Data Retrieval: Retrieve emissions data from local files, web scraping, or APIs.
 
@@ -14,16 +14,14 @@ Emissions Calculation: Calculate emissions for both national and state-level dat
 
 Reporting: Generate detailed reports and data outputs based on the compiled data.
 
-Automated QAQC: Ensure data quality with built-in automated checks.
-
-Installation
+## Installation
 
 Clone the repository to your local machine: git clone https://github.com/USEPA/GHG-inventory-incineration.git
 
 Ensure that you have the required R packages installed. 
 You can install any missing dependencies by running the following in your R console: install.packages(c("extrafont", "gt", "gtExtras", "httr", "janitor", "jsonlite", "knitr", "labelled", "quarto", "reactable", "roxygen2", "rvest", "showtext", "tidyverse", "pins", "targets", "visNetwork", "tarchetypes")
 
-Usage
+## Usage
 
 This repository contains two main components:
 
@@ -31,10 +29,24 @@ National Waste Incineration Emissions Calculation To compute emissions data at t
 
 State-Level Waste Incineration Emissions Calculation To compute emissions data at the state level, use functions_both.R, functions_national.R, and functions_state.R. The latter script processes state-specific data.
 
-Data Sources
+## Data Sources
 
 Emissions data is retrieved from various sources, including
 
 The specific sources for each dataset are defined within the respective source scripts.
 
-Disclaimer: The United States Environmental Protection Agency (EPA) GitHub project code is provided on an "as is" basis and the user assumes responsibility for its use. EPA has relinquished control of the information and no longer has responsibility to protect the integrity, confidentiality, or availability of the information. Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by EPA. The EPA seal and logo shall not be used in any manner to imply endorsement of any commercial product or activity by EPA or the United States Government.****
+## Citation
+
+If you use this software in a scientific publication, please cite it. Citation helps support the continued development and maintenance of the tool and ensures appropriate credit for the methods used.
+
+Preferred citation:
+
+Corra, J. 2025. GHG-inventory-incineration: A toolkit for retrieving, processing, and reporting solid waste incineration emissions data for the U.S. Greenhouse Gas Inventory, with support for both national and state-level analyses. GitHub repository: https://github.com/joewcorra/GHG-inventory-incineration
+
+
+You may also import the citation automatically using the CITATION.cff file included in this repository (supported by GitHub, Zenodo, and many reference managers).
+
+If your work makes substantial use of this code, or if you would like to discuss methodological details or potential collaboration, please feel free to contact me.
+
+---
+
